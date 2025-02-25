@@ -6,7 +6,7 @@ function App() {
   
   useEffect(() => {
     // Fetch todos from backend
-    axios.get('http://localhost:8080/api/todos')
+    axios.get('http://localhost:8000/api/todos')
       .then(response => setTodos(response.data))
       .catch(error => console.error('Error fetching todos:', error));
   }, []);
